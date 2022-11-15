@@ -11,7 +11,7 @@ authentication()
 function authentication(){
     axios.get("http://localhost:8080/bikeStoreBis/api/utilisateur")
         .then(response=>{console.log(response.data)})
-        .catch(error=>{console.log(error)})
+        .catch(error=>{console.log(error)});
 }
 const app = createApp(App)
 
